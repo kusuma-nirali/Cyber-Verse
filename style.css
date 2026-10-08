@@ -1,0 +1,712 @@
+/* ================= GENERAL ================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #050b14;
+    color: white;
+    overflow-x: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: rgba(0, 0, 0, 0.95);
+    border-bottom: 1px solid rgba(0, 255, 204, 0.15);
+}
+
+.navbar-brand {
+    color: #00ffcc !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: white !important;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #00ffcc !important;
+}
+
+
+/* ================= HOME ================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            #123b4a,
+            transparent 40%
+        ),
+        #050b14;
+}
+
+.terminal-text {
+    color: #00ffcc;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #00ffcc;
+}
+
+.hero h2 {
+    color: #00ffcc;
+    min-height: 45px;
+    font-size: 30px;
+}
+
+.hero-text {
+    color: #b8c4d0;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.cyber-btn {
+    background: #00ffcc;
+    color: #00110d;
+    border: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    transition: 0.3s ease;
+}
+
+.cyber-btn:hover {
+    background: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+
+/* ================= STATUS CARD ================= */
+
+.status-card {
+    border: 1px solid #00ffcc;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 255, 204, 0.05);
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+.status-card h4 {
+    color: #00ffcc;
+}
+
+.status-card hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.status-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #00ff66;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+
+/* ================= COMMON SECTIONS ================= */
+
+.content-section {
+    min-height: 500px;
+    padding: 100px 0;
+    background: #050b14;
+    border-top: 1px solid rgba(0, 255, 204, 0.08);
+}
+
+.content-section h2 {
+    text-align: center;
+    color: #00ffcc;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+.section-text {
+    max-width: 850px;
+    margin: auto;
+    color: #b8c4d0;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+/* ================= ABOUT CARD ================= */
+
+.about-card {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 35px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.4);
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.08);
+}
+
+.about-card p {
+    color: #b8c4d0;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ================= CARDS ================= */
+
+.info-card,
+.skill-card,
+.project-card,
+.achievement-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.info-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.achievement-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+
+/* ================= EDUCATION ================= */
+
+.info-card h4 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #b8c4d0;
+    line-height: 1.7;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skill-card {
+    text-align: center;
+}
+
+.skill-card h4 {
+    color: #00ffcc;
+    font-size: 22px;
+    margin: 0;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.project-card h4 {
+    color: #00ffcc;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #b8c4d0;
+    line-height: 1.7;
+}
+
+
+/* ================= ACHIEVEMENTS ================= */
+
+.achievement-card h4 {
+    color: #00ffcc;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    color: #b8c4d0;
+    line-height: 1.7;
+}
+
+
+/* ================= SIMULATOR ================= */
+
+.simulator-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+}
+
+.simulator-card p {
+    color: #b8c4d0;
+}
+
+#threatInput {
+    background: #050b14;
+    color: white;
+
+    border: 1px solid rgba(0, 255, 204, 0.4);
+
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+#threatInput::placeholder {
+    color: #71808f;
+}
+
+#threatInput:focus {
+    background: #050b14;
+    color: white;
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 12px rgba(0, 255, 204, 0.2);
+}
+
+#analyzeBtn {
+    margin-top: 15px;
+}
+
+#threatResult {
+    margin-top: 20px;
+    padding: 15px;
+
+    text-align: center;
+
+    color: #b8c4d0;
+
+    border-radius: 10px;
+
+    background: rgba(0, 255, 204, 0.03);
+}
+
+
+/* ================= CONTACT ================= */
+
+#contactForm {
+    max-width: 800px;
+    margin: auto;
+}
+
+#contactForm label {
+    color: #00ffcc;
+    margin-bottom: 8px;
+}
+
+#contactForm .form-control {
+    background: #050b14;
+    color: white;
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 8px;
+
+    padding: 12px;
+}
+
+#contactForm .form-control:focus {
+    background: #050b14;
+    color: white;
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 12px rgba(0, 255, 204, 0.2);
+}
+
+#formMessage {
+    margin-top: 20px;
+    color: #00ffcc;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 991px) {
+
+    .nav-link {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px 0 !important;
+    }
+
+    .hero {
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .status-card {
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    .content-section {
+        padding: 80px 20px;
+    }
+
+    .content-section h2 {
+        font-size: 32px;
+    }
+}
+/* ================= EDUCATION CARDS ================= */
+
+.info-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+.card-number {
+    display: block;
+
+    color: #00ffcc;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+.info-card h4 {
+    color: white;
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.info-card h5 {
+    color: #00ffcc;
+
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #b8c4d0;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+/* ================= SKILLS CARDS ================= */
+
+.skill-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+.skill-card h4 {
+    color: #00ffcc;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #b8c4d0;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+/* ================= PROJECT CARDS ================= */
+
+.project-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+.project-number {
+    display: block;
+
+    color: #00ffcc;
+
+    font-size: 14px;
+
+    margin-bottom: 10px;
+}
+
+.project-card h4 {
+    color: white;
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #b8c4d0;
+
+    line-height: 1.7;
+
+    margin-bottom: 20px;
+}
+
+.project-tag {
+    display: inline-block;
+
+    color: #00ffcc;
+
+    border: 1px solid rgba(0, 255, 204, 0.4);
+
+    border-radius: 20px;
+
+    padding: 5px 12px;
+
+    margin: 3px;
+
+    font-size: 13px;
+}
+/* ================= ACHIEVEMENT CARDS ================= */
+
+.achievement-card {
+    height: 100%;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+
+    transition: 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 204, 0.15);
+}
+
+.achievement-number {
+    display: block;
+
+    color: #00ffcc;
+
+    font-size: 15px;
+
+    margin-bottom: 12px;
+}
+
+.achievement-card h4 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 15px;
+}
+
+.achievement-card p {
+    color: #b8c4d0;
+
+    line-height: 1.7;
+
+    margin: 0;
+}
+/* ================= THREAT SIMULATOR ================= */
+
+.simulator-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+
+    background: rgba(0, 255, 204, 0.04);
+
+    border: 1px solid rgba(0, 255, 204, 0.35);
+
+    border-radius: 15px;
+}
+
+.simulator-intro {
+    color: #b8c4d0;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#threatInput {
+    background: #050b14;
+    color: white;
+
+    border: 1px solid rgba(0, 255, 204, 0.4);
+
+    border-radius: 10px;
+
+    padding: 15px;
+}
+
+#threatInput::placeholder {
+    color: #71808f;
+}
+
+#threatInput:focus {
+    background: #050b14;
+    color: white;
+
+    border-color: #00ffcc;
+
+    box-shadow:
+        0 0 12px rgba(0, 255, 204, 0.2);
+}
+
+#analyzeBtn {
+    display: block;
+    margin: 20px auto;
+}
+
+#threatResult {
+    padding: 20px;
+
+    text-align: center;
+
+    color: #b8c4d0;
+
+    background: rgba(0, 255, 204, 0.03);
+
+    border: 1px solid rgba(0, 255, 204, 0.2);
+
+    border-radius: 10px;
+}
+
+.simulator-note {
+    text-align: center;
+
+    color: #71808f;
+
+    font-size: 13px;
+
+    margin-top: 15px;
+}
